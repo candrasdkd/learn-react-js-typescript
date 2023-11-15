@@ -1,7 +1,7 @@
 type PersonListProps = {
     names: {
-        first: String,
-        last: String
+        first: string,
+        last: string
     }[]
 
 }

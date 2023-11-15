@@ -1,5 +1,5 @@
 type HeadingProps = {
-    children: String
+    children: string
 }
 function Heading(props: HeadingProps) {
     return (

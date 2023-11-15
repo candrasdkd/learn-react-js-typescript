@@ -1,3 +1,4 @@
+import React from "react"
 
 type OscarProps = {
     children: React.ReactNode

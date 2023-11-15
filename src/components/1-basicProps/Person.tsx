@@ -1,7 +1,7 @@
 type PersonProps = {
     name: {
-        first: String,
-        last: String
+        first: string,
+        last: string
     }
 }
 function Person(props: PersonProps) {
