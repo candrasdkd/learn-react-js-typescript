@@ -1,7 +1,10 @@
 import './App.css';
 import Greet from './components/Greet';
+import Heading from './components/Heading';
+import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
+import Status from './components/Status';
 
 function App() {
   const personName = {
@@ -24,9 +27,16 @@ function App() {
   ]
   return (
     <div className="App">
-      <Greet name='Candra' messageCount={15} isLoggedIn={true} />
+      {/* Basic Props */}
+      <Greet name='Candra' isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
+      {/* Advanced Props */}
+      <Status status='error' />
+      <Heading>Placeholder text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to Leoo</Heading>
+      </Oscar>
     </div>
   );
 }
